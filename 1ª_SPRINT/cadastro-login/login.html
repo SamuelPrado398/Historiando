@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color:beige;
+            justify-content: center;
+            display: flex;
+            min-height: 100px;
+
+        }
+
+        .login {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
+            background-color: white ;
+        }
+
+        .login label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .login input[type="email"],
+        .login input[type="password"] {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            
+        }
+
+        .login input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: 0.7s;
+        }
+
+        .login input[type="submit"]:hover {
+            background-color: #2f8733;
+            transform: scale(1.06);
+            transition: 0.7s;
+        }
+        
+        .cadastro{
+            text-align: center;
+            
+        }
+
+        .titulo{
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        label[for="email_usuario"],
+        label[for="senha_usuario"]{
+            color: #4CAF50;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="login">
+        <h2 class="titulo">LOGIN</h2>
+        <hr style="border: 1px solid #4CAF50; margin-bottom: 20px;">
+
+        <form action="login.php" method="post">
+            <label for="email_usuario">Email:</label>
+            <input type="email" id="email_usuario" name="email_usuario" required>
+            <br>
+            <label for="senha_usuario">Senha:</label>
+            <input type="password" id="senha_usuario" name="senha_usuario" required>
+            <br><br>
+            <input type="submit" value="Entrar">
+        </form>
+        <br>
+        <p class="cadastro">Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
+    </div>
+</body>
+</html>
